@@ -14,6 +14,6 @@
 
 <br>
 
-### Add to Cydia!
+## Add to Cydia!
 
-<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liightninggod.github.io/">Add Liightninggod's Repository to Cydia!</a>
+<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liightninggod.github.io/">cydia://url/https://cydia.saurik.com/api/share#?source=https://liightninggod.github.io/</a>
