@@ -1,0 +1,484 @@
+
+/*--------------------------
+ Colors for site:
+#2336AC - Blue
+#30AC23 - Green
+#AC232A - Red
+-----------------------------*/
+
+/*---------------------------------------
+  Preloader and Standardization
+-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body {
+    background: lightgrey;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+html, body {
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=file] {
+    margin: 0 auto;
+}
+
+
+
+/*---------------------------------
+  Classes Things
+---------------------------------*/
+.section-btn:focus,
+.section-btn:hover {
+  background: #2336AC;
+  color: #30AC23;
+}
+
+.section-btn {
+  background: #30AC23;
+  border: none;
+  border-radius: 50px;
+  color: #2336AC;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 18px 32px;
+  margin-top: 42px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.smolbtn {
+  margin: 0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:10px;
+  padding-right:10px;
+  background: #30AC23;
+  border: none;
+  border-radius: 50px;
+  color: #2336AC;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.smolbtn:focus,
+.smolbtn:hover {
+  background: #2336AC;
+  color: #30AC23;
+}
+
+.footer {
+  text-align:center;
+  padding:20px;
+  background:darkgrey;
+  font-size: medium;
+}
+.footer p {
+  color:white;
+}
+
+.subtext {
+  color:#2336AC;
+}
+
+.bsbllogo {
+  background-color: #ffffff;
+  text-align:center;
+  top:10px;
+}
+.mainheader {
+  padding:20px;
+  text-align:center;
+  color:#2336AC;
+}
+
+.constheader {
+  padding:20px;
+  text-align:center;
+  color:#2336AC;
+}
+.constsub {
+  padding:20px;
+  text-align:center;
+  color:#30AC23;
+}
+
+.gold {
+  color:#30AC23;
+}
+
+.backgold {
+  background-color: #30AC23;
+}
+
+.navy {
+  color:#2336AC;
+}
+
+.back#2336AC {
+  background-color: #2336AC;
+}
+
+.tix#2336AC {
+  background-color: #2336AC;
+}
+
+.center {
+ text-align:center;
+}
+
+/*----------------------------------
+  Spinner!!!!!!!!!!!!!!
+----------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+  .spinner {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.spinner div {
+  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: 	#000000;
+  margin: -3px 0 0 -3px;
+}
+.spinner div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.spinner div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.spinner div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.spinner div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.spinner div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.spinner div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.spinner div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.spinner div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.spinner div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.spinner div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.spinner div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.spinner div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.spinner div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.spinner div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.spinner div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.spinner div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------------------------------------
+  Social icon
+-----------------------------------------*/
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.social-icon li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+
+.arrow {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.arrow li {
+  display: inline-block;
+  list-style: none;
+}
+
+.arrow li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.arrow li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+.arrow2 {
+  float:left;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.arrow2 li {
+  display: inline-block;
+  list-style: none;
+}
+
+.arrow2 li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.arrow2 li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+}
+.gallery {
+  position: relative;
+  float:left;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.gallery li {
+  display: inline-block;
+  list-style: none;
+}
+
+.gallery li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.gallery li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+
+
+.cydiablur {
+  position: relative;
+  display: flex;
+}
+
+.cydiablur::before {
+  content: "";
+  position: absolute;
+  width: 100px; height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px 8px rgba(210,149,106,0.85);
+  animation: pulse2 4s infinite;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.cydiablur-inside {
+  position: relative;
+}
+
+.sileoblur {
+  position: relative;
+  display: flex;
+}
+.sileoblur::before {
+  content: "";
+  position: absolute;
+  width: 100px; height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px 8px rgba(47,218,202,0.85);
+  animation: pulse2 4s infinite;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.sileoblur-inside {
+  position: relative;
+}
+
+.zebrablur {
+  position: relative;
+  display: flex;
+}
+.zebrablur::before {
+  content: "";
+  position: absolute;
+  width: 100px; height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px 8px rgba(255,255,255,0.85);
+  animation: pulse2 4s infinite;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.zebrablur-inside {
+  position: relative;
+}
+
+.installerblur {
+  position: relative;
+  display: flex
+}
+.installerblur::before {
+  content: "";
+  position: absolute;
+  width: 100px; height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px 8px rgba(82,192,251,0.85);
+  animation: pulse2 4s infinite;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.installerblur-inside {
+  position: relative;
+}
+

@@ -1,6 +1,6 @@
-# Liightinggod's Cydia Repo
+# Liightinggod's Repo
 <br>
-### This Cydia Repository will host any projects developed by Liightinggod
+### This Repository will host any projects developed by Liightinggod
 <hr>
 
-<a href="https://cydia.saurik.com/api/share#?source=https://liightninggod.github.io/">## Add Liightninggod's Repository to Cydia!</a>
+<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liightninggod.github.io/">Add Liightninggod's Repository to Cydia!</a>
